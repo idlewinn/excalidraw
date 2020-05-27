@@ -3,7 +3,7 @@ import "./ExportDialog.scss";
 import React, { useState, useEffect, useRef } from "react";
 
 import { ToolButton } from "./ToolButton";
-import { clipboard, exportFile, link } from "./icons";
+import { clipboard, exportFile } from "./icons";
 import { NonDeletedExcalidrawElement } from "../element/types";
 import { AppState } from "../types";
 import { exportToCanvas } from "../scene/export";
@@ -114,13 +114,6 @@ const ExportModal = ({
                 onClick={() => onExportToClipboard(exportedElements, scale)}
               />
             )}
-            <ToolButton
-              type="button"
-              icon={link}
-              title={t("buttons.getShareableLink")}
-              aria-label={t("buttons.getShareableLink")}
-              onClick={() => onExportToBackend(exportedElements)}
-            />
           </Stack.Row>
           <div className="ExportDialog__name">
             {actionManager.renderAction("changeProjectName")}

@@ -80,8 +80,6 @@ export const MobileMenu = ({
           <Section className="App-mobile-menu" heading="canvasActions">
             <div className="panelColumn">
               <Stack.Col gap={4}>
-                {actionManager.renderAction("loadScene")}
-                {actionManager.renderAction("saveScene")}
                 {exportButton}
                 {actionManager.renderAction("clearCanvas")}
                 <RoomDialog
