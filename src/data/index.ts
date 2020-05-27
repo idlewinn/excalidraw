@@ -29,7 +29,10 @@ const BACKEND_GET = "https://json.excalidraw.com/api/v1/";
 const BACKEND_V2_POST = "https://json.excalidraw.com/api/v2/post/";
 const BACKEND_V2_GET = "https://json.excalidraw.com/api/v2/";
 
-export const SOCKET_SERVER = "https://excalidraw-socket.herokuapp.com";
+// To test the a locally run instance of the socket server, SOCKET_SERVER
+// should be set to "http://localhost:PORT", where PORT is the port the
+// server is listening to (e.g. "https://localhost:80")
+export const SOCKET_SERVER = "https://snc-excalidrawsocket01.thefacebook.com";
 
 export type EncryptedData = {
   data: ArrayBuffer;
